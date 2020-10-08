@@ -10,39 +10,42 @@ $text-color: #ffdbe9;
 body {
   //background: no-repeat center center; (try this if the above doesn't work)
   background-repeat: no-repeat;
-  background-color: $background-color;
+  background-color: rgb(203,222,234);
   // background-image: url('smoothie_stand.png');
   // background-position: bottom fixed;
   background-size: contain;
   margin-bottom: 600px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Arial', monospace;
   font-size: 25px;
   //overflow: hidden;
   //width: 100%;   ***don't think this is necessary due to the background-size: cover
 }
 
 // "container" centers the sign in page
-.container {
-  margin: 10px auto;
-  position: center;
-  width: 100%;
-  // height: 200px;
-}
+// .container {
+//   margin: 10px auto;
+//   position: center;
+//   width: 100%;
+//   // height: 200px;
+// }
 
 .navbar {
-  background-color: #52dbff;
-  color: #000;
+  background-color: rgb(65,81,129);
+  color: white;
   text-align: center;
 }
 
+// navbar fonts color
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color:white;
 }
+// once clicked color
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
-  color: #000;
+  color: white;
 }
+// welcome user color
 .navbar-dark .navbar-text {
-  color: rgba(26, 23, 23, 0.5);
+  color: white;
 }
 
 //.navlink {
@@ -53,18 +56,20 @@ body {
 
 h1 {
   font-family: 'Sriracha', cursive;
-  color: #17ecec;
+  color: rgb(65,81,129);
   font-size: 120px;
   left: 0;
   position: absolute;
   text-align: left;
-  text-shadow: -1px 0 black, 0 4px black, 2px 0 black, 0 -1px black;
+  text-shadow: -1px 0 white, 0 4px white, 2px 0 rgb(169,183,192), 0 -1px white;
   top: 0;
   vertical-align: top;
-  margin-top: 100px;
+  margin-top: .275em;
+  padding:.275em;
 }
 
 h3 {
+  font-size: 60px;
   align-items: center;
   margin-left: 200px;
   margin-top: 205px;
@@ -90,47 +95,47 @@ h5 {
 
 //h6 holds the styling for the titles "Sign Up" and "Sign In"
 h6 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Arial', monospace;
   //font-family: 'Sriracha', cursive;
-  color: #17ecec;
-  font-size: 40px;
+  color: whitesmoke;
+  font-size: 1.5em;
   text-align: center;
-  position: relative;
+  // position: relative;
   align-items: center;
   text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
   margin-top: 0;
 }
 
 //h7 holds styling for "Items" titles
-h7 {
-  align-items: center;
-  color: #17ecec;
-  font-family: 'Roboto Mono', monospace;
-  //font-family: 'Sriracha', cursive;
-  font-size: 40px;
-  position: relative;
-  text-align: center;
-  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
-  //margin-top: 140px;
-}
+// h7 {
+//   align-items: center;
+//   color: #17ecec;
+//   font-family: 'Roboto Mono', monospace;
+//   //font-family: 'Sriracha', cursive;
+//   font-size: 40px;
+//   position: relative;
+//   text-align: center;
+//   text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+//   //margin-top: 140px;
+// }
 
-h8 {
-  font-size: 20px;
-}
+// h8 {
+//   font-size: 20px;
+// }
 
-.auth-btns {
-  background-color: $button-color;
-  color: $hover-font-color;
-  margin: .5%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 10px;
-}
+// .auth-btns {
+//   background-color: $button-color;
+//   color: $hover-font-color;
+//   margin: .5%;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   padding: 10px;
+// }
 
 button {
-  color: $hover-font-color;
-  background-color: $button-color;
+  color: black;
+  background-color: white;
   border: 0;
   border-radius: 70px;
   border-width: thin;
@@ -140,113 +145,124 @@ button {
   // width: 50%;
 
   &:hover {
-    background-color: $background-color;
-    color: $text-color;
+    background-color: rgb(203,222,234);
+    color: black;
   }
 }
 
 //this still needs to be adjusted
-.btn-change-password {
-  background-color: $button-color;
-  border-color: none;
-  width: 200px;
-}
+// .btn-change-password {
+//   background-color: $button-color;
+//   border-color: none;
+//   width: 200px;
+// }
 
-.sign-up {
-  background-color: $text-color;
-  color: $hover-font-color;
-  float: left;
-  height: 60px;
-  line-height: 40px;
-  text-align: center;
-  width: 100%;
-}
+// .sign-up {
+//   background-color: $text-color;
+//   color: $hover-font-color;
+//   float: left;
+//   height: 60px;
+//   line-height: 40px;
+//   text-align: center;
+//   width: 100%;
+// }
 
-.sign-in {
-  background-color: $text-color;
-  color: $hover-font-color;
-  float: left;
-  height: 60px;
-  line-height: 40px;
-  text-align: center;
-  width: 100%;
-}
+// .sign-in {
+//   background-color: $text-color;
+//   color: $hover-font-color;
+//   float: left;
+//   height: 60px;
+//   line-height: 40px;
+//   text-align: center;
+//   width: 100%;
+// }
 
 // .input styles the form fields for sign up and sign in
-.input {
-  border: 2px lighter;
-  // border: 0px;
-  border-radius: 30px;
-  box-sizing: border-box;
-  font-size: 20px;
-  margin-bottom: 20px;
-  outline: none;
-  padding: 8px;
-  transition: .5s ease;
-}
+// .input {
+//   border: 2px lighter;
+//   // border: 0px;
+//   border-radius: 30px;
+//   box-sizing: border-box;
+//   font-size: 20px;
+//   margin-bottom: 20px;
+//   outline: none;
+//   padding: 8px;
+//   transition: .5s ease;
+// }
 
 //this changes the ORIGINAL sign in sign out fields
 form {
-  background-color: $text-color;
-  color: #000;
-  float: center;
-  border-radius: 30px;
-  // height: 360px;
-  line-height: 40px;
+  background-color: rgb(65,81,129);
+  border-radius: 5%;
+  margin: 0 auto;
+  margin-top: 5em;
+  width: 70%;
+  padding: .25em .75em;
+  color: white;
+  font-size: 40px;
   text-align: center;
-  border: 2px lighter;
-  box-sizing: border-box;
-  font-size: 25px;
-  margin-top: 150px;
-  outline: none;
-  padding: 20px;
-  transition: .5s ease;
-  width: 80%;
+  position: relative;
+  align-items: center;
+  // float: center;
+  // border-radius: 30px;
+  // // height: 360px;
+  // line-height: 40px;
+  // text-align: center;
+  // border: 2px lighter;
+  // box-sizing: border-box;
+  // font-size: 25px;
+  // margin-top: 150px;
+  // outline: none;
+  // padding: 20px;
+  // transition: .5s ease;
+  // width: 80%;
   }
 
 //row is the class name for the default sign in/sign out section
-row {
-  background-color: $text-color;
-  color: $hover-font-color;
-  border-radius: 60px;
-  clear: both;
-  cursor: pointer;
-  height: 400px;
-  justify-content: center;
-  padding: 40px;
-  position: relative;
-  width: 100%;
-    //width: 50%;
-  }
+// row {
+//   background-color: $text-color;
+//   color: $hover-font-color;
+//   border-radius: 60px;
+//   clear: both;
+//   cursor: pointer;
+//   height: 400px;
+//   justify-content: center;
+//   padding: 40px;
+//   position: relative;
+//   width: 100%;
+//     //width: 50%;
+//   }
 
 .btn-primary {
-  color: $hover-font-color;
-  background-color: $button-color;
+  color: black;
+  background-color: white;
   border: 0;
   border-radius: 70px;
   border-width: thin;
   font-size: 25px;
   text-align: center;
+  padding: 10px;
   // width: 50%;
+
   &:hover {
-    background-color: $background-color;
-    color: #52dbff;
+    background-color: rgb(203,222,234);
+    color: black;
   }
 }
 
-  col-sm-10 col-md-8 mx-auto mt-5 {
-    background-color: $text-color;
-    color: $hover-font-color;
-    border-radius: 60px;
-    clear: both;
-    cursor: pointer;
-    height: 400px;
-    padding: 40px;
-    width: 100%;
-    //width: 50%;
-    justify-content: center;
-    position: relative;
-  }
+  // col-sm-10 col-md-8 mx-auto mt-5 {
+  //   background-color: $text-color;
+  //   color: $hover-font-color;
+  //   border-radius: 60px;
+  //   clear: both;
+  //   cursor: pointer;
+  //   height: 400px;
+  //   padding: 40px;
+  //   width: 100%;
+  //   //width: 50%;
+  //   justify-content: center;
+  //   position: relative;
+  // }
 
 //.menupicture {
     // float: right;
@@ -258,87 +274,99 @@ row {
 
 .items {
   // background-color: $text-color;
-  color: #000;
+  // color: #000;
+  // float: center;
+  // border-radius: 30px;
+  // // height: 360px;
+  // line-height: 40px;
+  // text-align: center;
+  // border: 2px lighter;
+  // box-sizing: border-box;
+  // // font-size: 25px;
+  // margin-top: 200px;
+  // margin-bottom: -75px;
+  // // margin-left: 100px;
+  // outline: none;
+  // padding: 20px;
+  // transition: .5s ease;
+  // width: 70%;
+  color: white;
   float: center;
-  border-radius: 30px;
-  // height: 360px;
-  line-height: 40px;
-  text-align: center;
-  border: 2px lighter;
+  margin: 0 auto;
   box-sizing: border-box;
-  font-size: 25px;
-  margin-top: 200px;
-  margin-bottom: -75px;
-  margin-left: 100px;
-  outline: none;
-  padding: 20px;
-  transition: .5s ease;
+  margin-top: 5em;
   width: 70%;
-}
-
-.item {
-background-color: $text-color;
-color: #000;
-border-radius: 60px;
-clear: both;
-cursor: pointer;
-height: 300px;
-padding: 10px;
-width: 80%;
-margin: 0 auto;
-margin-top: 200px;
-justify-content: center;
-text-align: center;
-}
-
-ul {
-  list-style-type: none;
- }
-
-// class name is wrong
-navbar-text mr-2 {
-  color: $button-color;
-}
-li {
-  width: 90%;
-}
-
-// .updates controls 'Manage Your Inventory' section
-.updates {
-  margin-top: 0;
-  width: 80%;
-  padding: 25px;
-  color: #17ecec;
-  font-size: 40px;
+  color: white;
+  font-size: 30px;
   text-align: center;
   position: relative;
   align-items: center;
 }
 
+// .item {
+// background-color: $text-color;
+// color: #000;
+// border-radius: 60px;
+// clear: both;
+// cursor: pointer;
+// height: 300px;
+// padding: 10px;
+// width: 80%;
+// margin: 0 auto;
+// margin-top: 200px;
+// justify-content: center;
+// text-align: center;
+// }
+
+// ul {
+//   list-style-type: none;
+//  }
+
+// // class name is wrong
+// navbar-text mr-2 {
+//   color: $button-color;
+// }
+// li {
+//   width: 90%;
+// }
+
+// .updates controls 'Manage Your Inventory' section
+// .updates {
+//   margin: 0 auto;
+//   margin-top: 5em;
+//   width: 70%;
+//   padding: 2em;
+//   color: #17ecec;
+//   font-size: 40px;
+//   text-align: center;
+//   position: relative;
+//   align-items: center;
+// }
+
 // .change controls the styling for 'Change Password'
-.change {
-  color: $hover-font-color;
-  background-color: $button-color;
-  border: 0;
-  border-radius: 70px;
-  border-width: thin;
-  font-size: 20px;
-  padding: 10px;
-  text-align: center;
-}
+// .change {
+//   color: $hover-font-color;
+//   background-color: $button-color;
+//   border: 0;
+//   border-radius: 70px;
+//   border-width: thin;
+//   font-size: 20px;
+//   padding: 10px;
+//   text-align: center;
+// }
 
 .alert-success {
-  color: $hover-font-color;
-  background-color: $button-color;
-  border-radius: 50px;
+  color: black;
+  background-color: white;
+  border-radius: 5%;
   opacity: 0.8;
   text-align: center;
 }
 
 .alert-danger {
   color: #000;
-  background-color: $hover-font-color;
-  border-radius: 50px;
+  background-color: white;
+  border-radius: 5%;
   opacity: 0.8;
   text-align: center;
 }
@@ -377,6 +405,7 @@ li {
   //width: 50%;
 //}
 
+// Jen & Mel
 .card {
   text-align:center;
   margin: 0 auto;
@@ -406,4 +435,16 @@ li {
 .card-title {
   margin-bottom: 2.5rem;
   margin-top: 1.5rem;
+}
+
+h6 {
+  font-family: 'Arial', monospace;
+  //font-family: 'Sriracha', cursive;
+  color: whitesmoke;
+  font-size: 60px;
+  text-align: center;
+  // position: relative;
+  align-items: center;
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+  margin-top: 0;
 }
